@@ -1,0 +1,8 @@
+$.getJSON("user-3.json",function(data){
+ 	var result=$('[elt]');
+ 	for (var i=0; i < result.length; i++){
+ 	var attribut =$(result[i]).attr('elt');
+ 	var valeur = data[attribut];
+ $(result[i]).html(valeur);
+ }
+});
